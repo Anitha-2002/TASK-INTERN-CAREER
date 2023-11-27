@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Real-time gaming using body gestures</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/anithaWithoutBg.png"
+              alt="Anitha-Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Anitha Ramesh</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Real-time gaming using Body gestures</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Traditional Gaming involve playing games using touch, keyboard or mouse events without incurring 
+            any sort of physical movements. What if the Real-time Body Gestures are used for controlling the game’s 
+            character to make gaming more interesting? Few popular gaming gestures can be controlled by the 
+            movements made by the player standing in front of the camera without using any external sensors 
+            or any type of hard wares but only with the help of body gestures. This proposed project is planned 
+            to be implemented in PC/ Desktop. Using Mediapipe Pose Detection, a high-fidelity body pose tracking 
+            Machine Learning solution for  developers to detect the pose of a subject's body in real time from a 
+            continuous video or static image, Body Pose Recognition could be made possible along with matplot 
+            library which is used to plot the 33 3D landmarks on the screen. With the help of PyAutoGUI, an API 
+            which lets the Python scripts control the mouse and keyboard to automate interactions with other 
+            applications, the mouse and keyboard events are controlled using Gestures. This project is mainly 
+            aimed to incur physical gestures while playing a game which makes the gaming experience much more 
+            amusing and interesting while keeping the player physically active as well. <br><br>
+            Click the Live link to get exe file link. Download the exe file in your system and enjoy using the product.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://www.dropbox.com/scl/fi/4bkboew4bk0358zb25m7s/Gesture_Gaming.exe?rlkey=earfygkfny8irf575vfhl3f5j&dl=0" class="btn btn--bg" target="_blank">Live Link</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/gaming.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                User stands in front of the camera and accesses the driver and the pose is recognized by 
+                the Pose Recognition System which in turn gets stored in Gesture Database then the application 
+                extracts frames from the video captured real time and the background is ignored as only the 
+                player is to be focussed mainly then the frames are converted from RGB to BGR format and 
+                given as input to opencv then the pose is detected using mediapipe and the points are plotted 
+                using matplot and the threshold values are checked against for exact recognition of the pose. 
+                Finally the corresponding key press events of PyAutoGUI is triggered to control the keyboard
+                 while the pose is being used to control the game’s Character
+              </p>
+              <h3 class="project-details__content-title">Modules Available</h3>
+              <ul class="project-details__desc-para">
+                <li>Testing Pose Detection</li>
+              <li>Initiation of Game using ‘Joined Hands’ Gesture</li>
+            <li>Horizontal Movements Detection</li>
+          <li>Vertical Movements Detection</li>
+        <li>Control of Keyboard events using PyautoGUI</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Mediapipe Framework</div>
+                <div class="skills__skill">PyAutoGUI</div>
+                <div class="skills__skill">OpenCV</div>
+                <div class="skills__skill">Pycharm</div>
+                <div class="skills__skill">Jupyter Notebook</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <a
+                href="https://github.com/Anitha-2002/Real-time-gaming-using-body-gestures"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social Media Links</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Anitha Ramesh</h4>
+            <p class="main-footer__short-desc">
+              Email   : anitharamesh.cse.sec@gmail.com<br>
+              Alternate Mail ID : anitha2002priya2003@gmail.com<br>
+              Phone   : +91 9176114370<br>
+              Location: Chennai, Tamil Nadu, India.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+         
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
